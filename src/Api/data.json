@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "titleEnglish": "Wild Achillea Cologne",
+        "slug": "no01",
+        "titleKorea":"와일드 아킬리아 코롱",
+        "price":"116,000",
+        "photoUrl": "./img/box_pic01.avif"
+    },
+    {
+        "id": "2",
+        "titleEnglish": "Melancholy Thistle Cologne",
+        "slug": "no02",
+        "titleKorea":"멜랑콜리 티슬 코롱",
+        "price":"116,000",
+        "photoUrl": "./img/box_pic02.avif"
+    },
+    {
+        "id": "3",
+        "titleEnglish": "Mallow On The Moor Colgne",
+        "slug": "no03",
+        "titleKorea":"말로우 온 더 무어 코롱",
+        "price":"116,000",
+        "photoUrl": "./img/box_pic03.avif"
+    },
+    {
+        "id": "4",
+        "titleEnglish": "Highland Heather Cologne",
+        "slug": "no04",
+        "titleKorea":"하일랜드 헤더 코롱",
+        "price":"116,000",
+        "photoUrl": "./img/box_pic04.avif"
+    }
+]
