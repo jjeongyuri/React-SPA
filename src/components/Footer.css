@@ -1,0 +1,41 @@
+footer{
+    width: 100%;
+}
+footer>div{
+    width: 1800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.top>small{
+    font-size: 14px;
+}
+.top>img{
+    width: 150px;
+}
+.top>ul{
+    display: flex;
+}
+.top>ul>li{
+    font-size: 12px;
+    margin-left: 17px;
+}
+
+.bottom{
+}
+.bottom>dl{
+    font-size: 12px;
+    color: black;
+    position: relative;
+}
+.bottom>dl>dt{
+   margin-bottom: 5px;
+}
+.bottom>dl>dd{
+    margin-bottom: 15px;
+}

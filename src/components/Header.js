@@ -1,3 +1,6 @@
+import {BiUser,BiShoppingBag} from 'react-icons/bi';
+import './Header.css';
+
 export default function Header(){
     return(
         <header>
@@ -8,7 +11,7 @@ export default function Header(){
                             <a href="#">하일랜드 컬렉션</a>
                             <ul>
                                 <li>
-                                    <a href="#">이름</a>
+                                    <a href="#">와일드 아킬리아 코롱</a>
                                 </li>
                             </ul>
                         </li>
@@ -25,10 +28,14 @@ export default function Header(){
                 </h1>
                 <ul className="etc">
                     <li>
-                        <a href="#">아이콘</a>
+                        <a href="#">
+                            <BiUser/>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">아이콘</a>
+                        <a href="#">
+                            <BiShoppingBag/>
+                        </a>
                     </li>
                 </ul>
             </div>
