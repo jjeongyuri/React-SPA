@@ -1,4 +1,5 @@
 import ProductItem from "../components/ProductItem";
+import './Story.css';
 
 export default function Story(){
     return(
@@ -11,7 +12,7 @@ export default function Story(){
                 </div>
                 <div className="detailImg">
                     <figure>
-                        <img src="" alt=""/>
+                        <img src={'../img/box10_pic01.avif'} alt="이미지1"/>
                         <figcaption>
                             <p>네 가지 향으로 구성된 새로운 리미티드 에디션 컬렉션은 스코틀랜드 하일랜드 자연 그대로의 아름다움에서 영감을 받아 울퉁불퉁한 고원, 안개 자욱한 들판, 무너져가는 성과 신비한 호수의 생생한 모습이 떠오르는 독특한 곳입니다. 셀린은 "우리는 '영국의 시골 마을' 하면 좀 더 질서정연하고 단정된 모습을 떠올립니다." 라고 말합니다. "하지만 스코틀랜드 하일랜드는 매우 극적으로 야생적인 자연을 보여줍니다. 이런 모습을 컬렉션에서 표현하고 싶었습니다. 우리가 아무리 자연을 통제하려고 노력해도, 자연 그 자체에 맡겨 두면, 결국 다시 자연이 모든 걸 지배하게 된다는 것을 말이죠."</p>
                             <p>
@@ -25,7 +26,7 @@ export default function Story(){
         <div id="box11">
             <div>
                 <div className="left">
-                    <img src="" alt=""/>
+                    <img src={'../img/box'} alt=""/>
                     <p>셀린은 조향사 세 명과 협업하며 컬렉션을 통해 풍경의 다양성을 보여주는 동시에 각 조향사의 개인적인 취향을 컬렉션에 반영하고자 했습니다. 앤 플리포는 스코틀랜드의 국화인 티슬에 주목했고, 마리 살라망쥬는 스코틀랜드에서 하이킹을 하며 감탄했던 풍경과 자연의 광물이 주는 느낌에 집중했습니다. 얀 바스니에는 하일랜드의 동식물에 초점을 맞추면서 그만의 접근 방식으로 풍경과 전설을 탐구했습니다. 그 결과 다양하고도 서로 보완적인 향을 만들어냈습니다.</p>
                 </div>
                 <div className="right">

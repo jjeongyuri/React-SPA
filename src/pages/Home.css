@@ -1,16 +1,17 @@
 /* box01 */
 #box01{
     position: relative;
-    background-color: pink;
+    margin-bottom: 112px;
 }
 #box01>ul{}
 #box01>ul>li{}
 
 .collection{
     position: absolute;
-    left: 45%;
-    bottom: 25%;
+    bottom: 20%;
+    left: 42%;
     text-align: center;
+    z-index: 100;
 }
 .collection>h2{
     font-size: 45px;
@@ -27,7 +28,7 @@
 
 /* box02 */
 #box02{
-    margin-bottom: 70px;
+    margin-bottom: 112px;
 }
 #box02>div{
     width: 1400px;
@@ -55,7 +56,7 @@
 
 /* box03 */
 #box03{
-    margin-bottom: 70px;
+    margin-bottom: 112px;
 }
 #box03>h2{
     font-size: 32px;

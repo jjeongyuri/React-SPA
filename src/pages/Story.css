@@ -1,0 +1,65 @@
+#box10{
+    margin: 150px 0 112px;
+}
+#box10>div{
+    width: 1400px;
+    margin: 0 auto;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 112px;
+}
+.title>h2{
+    font-size: 24px;
+    color: #1c1c1c;
+    line-height: 1.3333;
+    font-family: "Nanum Myeongjo",PingFang,Times,"Times New Roman",serif;
+    width: 50%;
+}
+.title>p{
+    width: 50%;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: "Noto Sans KR",PingFang,Helvetica,Arial,sans-serif;
+}
+
+.detailImg{}
+.detailImg>figure{}
+.detailImg>figure>img{
+    width: 100%;
+    margin-bottom: 112px;
+}
+.detailImg>figure>figcaption{
+    display: flex;
+    justify-content: space-between;
+}
+.detailImg>figure>figcaption>p{
+    width: 47%;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: "Noto Sans KR",PingFang,Helvetica,Arial,sans-serif;
+    color: #1c1c1c;
+    margin-bottom: 112px;
+}
+
+
+/* box11 */
+#box11{}
+#box11>div{
+    width: 1400px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: "Noto Sans KR",PingFang,Helvetica,Arial,sans-serif;
+    color: #1c1c1c;
+    margin-bottom: 112px;
+}
+.left{}
+.left>img{}
+.left>p{}
+
+.right{}
+.right>img{}
+.right>p{}

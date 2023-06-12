@@ -1,22 +1,53 @@
 import ProductItem from "../components/ProductItem";
 import './Home.css';
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay , Navigation} from "swiper";
+
 
 export default function Home(){
     return(
         <>
         <div id="box01">
-            <ul>
-                <li>event01</li>
-                <li>event02</li>
-                <li>event03</li>
-                <li>event04</li>
-            </ul>
-            <div className="collection">
+        <Swiper navigation={true} 
+                modules={[Navigation,Autoplay]} 
+                className="mySwiper"
+                style={{height:'100vh',
+                       "--swiper-navigation-color": "#1c1c1c",
+                       "--swiper-pagination-color": "#1c1c1c",}}
+                autoplay={{ delay: 2000 }}
+                >
+        <ul>
+           <li>
+            <SwiperSlide>
+                <img src={"./img/box01_pic01.avif"} alt=""/>
+            </SwiperSlide>
+           </li>
+           <li>
+            <SwiperSlide>
+                <img src={"./img/box01_pic02.avif"} alt=""/>
+            </SwiperSlide>
+           </li>
+           <li>
+            <SwiperSlide>
+                <img src={"./img/box01_pic03.avif"} alt=""/>
+            </SwiperSlide>
+           </li>
+        </ul>
+        <div className="collection">
                 <h2>하일랜드 컬렉션</h2>
                 <p>
                     <a href="#">컬렉션 보기</a>
                 </p>
             </div>
+      </Swiper>
         </div>
         <div id="box02">
             <div>

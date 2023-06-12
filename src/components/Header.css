@@ -1,9 +1,11 @@
 header{
     padding: 12px 0;
-    /* width: 100%;
+    width: 100%;
     position: fixed;
     left: 0; top: 0;
-    z-index: 100; */
+    z-index: 100;
+    background-color: #fcf9ee;
+    font-family: "Noto Sans KR",PingFang,Helvetica,Arial,sans-serif
 }
 header>div{
     width: 1800px;
@@ -27,12 +29,14 @@ header>div>nav>ul>li>a{
 }
 header>div>nav>ul>li:first-child>ul{
     position: absolute;
-    left: 10px; top: 51px;
+    left: 0; top: 51px;
     background-color: #fcf9ee;
     width: 150px;
     /* display: none; */
 }
 header>div>nav>ul>li:first-child>ul>li{
+    padding: 5px;
+    text-align: center;
 }
 header>div>nav>ul>li:first-child>ul>li>a{
     font-size: 12px;

@@ -1,0 +1,77 @@
+/* box04 */
+#box04{
+    position: relative;
+    margin: 66px 0 112px;
+}
+#box04>div{
+}
+#box04>div>img{
+    height: 100vh;
+    width: 100%;
+}
+#box04>div>h2{
+    font-size: 45px;
+    position: absolute;
+    left: 46%; top: 50%;
+    color: #fff;
+    font-family: "Nanum Myeongjo",PingFang,Times,"Times New Roman",serif;
+}
+
+
+/* box05 */
+#box05{
+    margin-bottom: 112px;
+}
+#box05>div{
+    width: 1800px;
+    margin: 0 auto;
+    text-align: center;
+}
+#box05>div>p{
+    font-size: 24px;
+    line-height: 1.333;
+    font-family: "Nanum Myeongjo",PingFang,Times,"Times New Roman",serif;
+    margin-bottom: 50px;
+}
+#box05>div>form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#box05>div>form>input{
+    width: 60%;
+    line-height: 30px;
+    padding: 2px;
+    margin-right: 10px;
+}
+#productItem{}
+
+
+/* box06 */
+#box06{
+    margin-bottom: 112px;
+}
+#box06>div{
+    width: 1400px;
+    margin: 0 auto;
+}
+#box06>div>figure{
+    display: flex;
+    align-items: center;
+}
+#box06>div>figure>img{}
+#box06>div>figure>figcaption{
+    width: 700px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#box06>div>figure>figcaption>p{
+    font-size: 24px;
+    font-family: "Nanum Myeongjo",PingFang,Times,"Times New Roman",serif;
+    margin-bottom: 35px;
+}
+#box06>div>figure>figcaption>p:last-child{
+    font-size: 14px;
+    line-height: 16px;
+}
