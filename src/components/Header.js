@@ -1,18 +1,40 @@
 import {BiUser,BiShoppingBag} from 'react-icons/bi';
 import './Header.css';
+// import { getData } from '../Api/Api';
+import { useState } from 'react';
+
+// function ProductName({items,toggle}){
+//     console.log(items)
+//     if(!toggle){
+//         return null;
+//        }
+//     return (
+//         <li>
+//           <a href="#">{items.titleKorea}</a>
+//         </li>
+//     )
+// }
+
 
 export default function Header(){
+    // const data =  getData();
+    // console.log(data)
+    const [toggle,setToggle] = useState(false);
+      
+    
     return(
         <header>
             <div>
                 <nav>
                     <ul>
-                        <li>
+                        <li onClick={()=>setToggle(!toggle)}>
                             <a href="#">하일랜드 컬렉션</a>
                             <ul>
-                                <li>
-                                    <a href="#">와일드 아킬리아 코롱</a>
-                                </li>
+                              {/* {data.map((items)=>
+                              <ProductName key={items.id}
+                                           items={items}
+                                           toggle={toggle}/>
+                             )} */}
                             </ul>
                         </li>
                         <li>

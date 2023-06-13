@@ -55,11 +55,33 @@
     font-family: "Noto Sans KR",PingFang,Helvetica,Arial,sans-serif;
     color: #1c1c1c;
     margin-bottom: 112px;
+    display: flex;
+    justify-content: space-between;
 }
-.left{}
+#box11>div img{
+    width: 100%;
+    margin-bottom: 112px;
+}
+#box11>div p{
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: "Noto Sans KR",PingFang,Helvetica,Arial,sans-serif;
+    text-align: justify;
+}
+.left{
+    width: 650px;
+    box-sizing: border-box;
+}
 .left>img{}
 .left>p{}
 
-.right{}
+.right{
+    width: 650px;
+    box-sizing: border-box;
+}
 .right>img{}
 .right>p{}
+
+
+/* box12 */
+#box12{}

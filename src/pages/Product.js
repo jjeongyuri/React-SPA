@@ -2,6 +2,8 @@ import ProductItem from "../components/ProductItem";
 import './Product.css';
 
 export default function Product(){
+   
+
     return(
         <>
         <div id="box07">
@@ -48,9 +50,7 @@ export default function Product(){
         </div>
         <div id="box03">
             <h2>당신을 위한 추천 상품</h2>
-            <div id="productItem">
                 <ProductItem/>
-            </div>
         </div>
         </>
     )

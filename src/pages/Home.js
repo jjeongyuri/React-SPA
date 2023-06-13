@@ -1,18 +1,23 @@
 import ProductItem from "../components/ProductItem";
 import './Home.css';
+
+
+// Swiper data
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
 // import required modules
 import { Autoplay , Navigation} from "swiper";
 
 
+
 export default function Home(){
+    // const [keyword, setKeyword] = useState('');
+    // const data = getData(keyword);
+    // console.log(data)
     return(
         <>
         <div id="box01">
@@ -27,17 +32,17 @@ export default function Home(){
         <ul>
            <li>
             <SwiperSlide>
-                <img src={"./img/box01_pic01.avif"} alt=""/>
+                <img src={"./img/box01_pic01.avif"} alt="사진1"/>
             </SwiperSlide>
            </li>
            <li>
             <SwiperSlide>
-                <img src={"./img/box01_pic02.avif"} alt=""/>
+                <img src={"./img/box01_pic02.avif"} alt="사진2"/>
             </SwiperSlide>
            </li>
            <li>
             <SwiperSlide>
-                <img src={"./img/box01_pic03.avif"} alt=""/>
+                <img src={"./img/box01_pic03.avif"} alt="사진3"/>
             </SwiperSlide>
            </li>
         </ul>
@@ -52,7 +57,7 @@ export default function Home(){
         <div id="box02">
             <div>
                 <figure>
-                    <img src={'./img/box02_pic01.avif'} alt=""/>
+                    <img src={'./img/box02_pic01.avif'} alt="향수1"/>
                     <figcaption>
                         <p>와일드 아킬리아 코롱</p>
                         <p>
@@ -61,7 +66,7 @@ export default function Home(){
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src={'./img/box02_pic02.avif'} alt=""/>
+                    <img src={'./img/box02_pic02.avif'} alt="향수2"/>
                     <figcaption>
                         <p>와일드 아킬리아 코롱</p>
                         <p>
@@ -73,9 +78,7 @@ export default function Home(){
         </div>
         <div id="box03">
             <h2>완벽한 선물</h2>
-            <div id="productItem">
                 <ProductItem/>
-            </div>
         </div>
         </>
     )

@@ -5,6 +5,7 @@
         "slug": "no01",
         "titleKorea":"와일드 아킬리아 코롱",
         "price":"₩116,000",
+        "ml":"30ML",
         "photoUrl": "./img/box_pic01.avif"
     },
     {
@@ -13,6 +14,7 @@
         "slug": "no02",
         "titleKorea":"멜랑콜리 티슬 코롱",
         "price":"₩116,000",
+        "ml":"30ML",
         "photoUrl": "./img/box_pic02.avif"
     },
     {
@@ -21,6 +23,7 @@
         "slug": "no03",
         "titleKorea":"말로우 온 더 무어 코롱",
         "price":"₩116,000",
+        "ml":"30ML",
         "photoUrl": "./img/box_pic03.avif"
     },
     {
@@ -29,6 +32,7 @@
         "slug": "no04",
         "titleKorea":"하일랜드 헤더 코롱",
         "price":"₩116,000",
+        "ml":"30ML",
         "photoUrl": "./img/box_pic04.avif"
     }
 ]

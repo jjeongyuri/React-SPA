@@ -15,7 +15,7 @@ export default function Main(){
                 <Route path="/" element={<Home/>}/>
                 <Route path="list">
                   <Route index element={<ProductList/>}/>
-                  <Route path="no01" element={<Product/>}/>
+                  <Route path="class01" element={<Product/>}/>
                 </Route>
                 <Route path="about" element={<About/>}/>
                 <Route path="story" element={<Story/>}/>

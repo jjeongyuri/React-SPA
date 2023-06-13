@@ -1,4 +1,5 @@
 import ProductItem from "../components/ProductItem";
+import './WishList.css';
 
 export default function WishList(){
     return(
@@ -12,7 +13,7 @@ export default function WishList(){
                         <li>수량</li>
                         <li>총 합계</li>
                     </ul>
-                    <ul>
+                    <ul className="wishlistproduct">
                         <li>
                             <ProductItem/>
                         </li>

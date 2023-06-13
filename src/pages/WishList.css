@@ -1,0 +1,40 @@
+#box15{
+    margin: 150px 0 112px;
+}
+#box15>div{
+    width: 1000px;
+    margin: 0 auto;
+}
+#box15>div>h2{
+    font-size: 24px;
+    color: #1c1c1c;
+    line-height: 1.3333;
+    font-family: "Nanum Myeongjo",PingFang,Times,"Times New Roman",serif;
+    text-align: center;
+    margin-bottom: 112px;
+    font-weight: 700;
+}
+#wishlist{}
+.all{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 40px;
+}
+.all>li{
+    font-size: 13px;
+    line-height: 72px;
+    margin-right: 112px;
+}
+.all>li:first-child{
+    margin-right: 390px;
+}
+.all>li:last-child{
+    margin-right: 0;
+}
+.wishlistproduct{
+
+}
+.wishlistproduct>li{
+}
