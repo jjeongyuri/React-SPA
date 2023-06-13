@@ -1,6 +1,6 @@
 import ProductItem from "../components/ProductItem";
 import './Home.css';
-
+import { getData } from "../Api/Api";
 
 // Swiper data
 import React, { useRef, useState } from "react";
@@ -11,13 +11,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
 import { Autoplay , Navigation} from "swiper";
+import { Link } from "react-router-dom";
 
 
 
 export default function Home(){
-    // const [keyword, setKeyword] = useState('');
-    // const data = getData(keyword);
+    const data = getData();
     // console.log(data)
+
+
     return(
         <>
         <div id="box01">
@@ -27,31 +29,31 @@ export default function Home(){
                 style={{height:'100vh',
                        "--swiper-navigation-color": "#1c1c1c",
                        "--swiper-pagination-color": "#1c1c1c",}}
-                autoplay={{ delay: 2000 }}
+                autoplay={{ delay: 4000 }}
                 >
-        <ul>
-           <li>
+       {/* <ul>
+           <li> */}
             <SwiperSlide>
                 <img src={"./img/box01_pic01.avif"} alt="사진1"/>
             </SwiperSlide>
-           </li>
-           <li>
+           {/* </li>
+           <li> */}
             <SwiperSlide>
                 <img src={"./img/box01_pic02.avif"} alt="사진2"/>
             </SwiperSlide>
-           </li>
-           <li>
+           {/* </li>
+           <li> */}
             <SwiperSlide>
                 <img src={"./img/box01_pic03.avif"} alt="사진3"/>
             </SwiperSlide>
-           </li>
-        </ul>
+           {/* </li>
+        </ul>  */}
         <div className="collection">
                 <h2>하일랜드 컬렉션</h2>
                 <p>
-                    <a href="#">컬렉션 보기</a>
+                    <Link to="list">컬렉션 보기</Link>
                 </p>
-            </div>
+            </div> 
       </Swiper>
         </div>
         <div id="box02">
@@ -78,7 +80,7 @@ export default function Home(){
         </div>
         <div id="box03">
             <h2>완벽한 선물</h2>
-                <ProductItem/>
+                <ProductItem data={data}/>
         </div>
         </>
     )

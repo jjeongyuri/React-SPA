@@ -1,8 +1,12 @@
 import ProductItem from "../components/ProductItem";
 import './ProductList.css';
 import {BiSearchAlt} from 'react-icons/bi';
+import { getData } from "../Api/Api";
+import { Link } from "react-router-dom";
 
 export default function ProductList(){
+    const data = getData();
+
     return(
         <>
         <div id="box04">
@@ -21,8 +25,8 @@ export default function ProductList(){
                     <BiSearchAlt style={{width:"30px",height:
                 " 30px"}}/>
                 </form>
-                <div id="productItem">
-                    <ProductItem/>
+                <div id="box03">
+                    <ProductItem data={data}/>
                 </div>
             </div>
         </div>
@@ -32,7 +36,9 @@ export default function ProductList(){
                     <img src={"./img/box06.avif"} alt="컬렉션의 탄생"/>
                     <figcaption>
                         <p>컬렉션의 탄생</p>
-                        <p>스토리보기</p>
+                        <p>
+                            <Link to={"../story"}>스토리보기</Link>
+                        </p>
                     </figcaption>
                 </figure>
             </div>

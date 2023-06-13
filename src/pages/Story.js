@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProductItem from "../components/ProductItem";
 import './Story.css';
 
@@ -8,7 +9,7 @@ export default function Story(){
             <div>
                 <div className="title">
                     <h2>하일랜드 컬렉션</h2>
-                    <p>리미티드 에디션 컬렉션의 비하인드 스토리. 셀린 루(Céline Roux)와 조향사 앤 플리포(Anne Flipo), 마리 살라먕쥬(Marie Salamagne), 얀 바스니에(Yann Vasnier)가 하일랜드 컬렉션에 대해 이야기합니다.</p>
+                    <p>리미티드 에디션 컬렉션의 비하인드 스토리. 셀린 루(Céline Roux)와 조향사 앤 플리포(Anne Flipo), 마리 살라먕쥬(Marie Salamagne), 얀 바스니에(Yann Vasnier)가 <Link to={'../list'}>하일랜드 컬렉션</Link>에 대해 이야기합니다.</p>
                 </div>
                 <div className="detailImg">
                     <figure>

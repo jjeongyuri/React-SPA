@@ -1,30 +1,38 @@
 import './ProductItem.css';
 
-function ItemEtc(){
+export function ItemEtc({item}){
+    // console.log(item)
+
     return (
         <figure>
-            <img src="" alt=""/>
+            <img src={item.photoUrl} alt={item.titleEnglish}/>
             <figcaption>
                 <dl>
                     <dt>신제품</dt>
-                    <dd>""</dd>
-                    <dd>""</dd>
-                    <dd>""
-                        <span>""</span>
+                    <dd>{item.titleEnglish}</dd>
+                    <dd>{item.titleKorea}</dd>
+                    <dd>{item.price}
+                        <span>{item.ml}</span>
                     </dd>
                 </dl>
                 <p>
-                    <button>미리보기</button>
+                    <button>제품보기</button>
                 </p>
             </figcaption>
         </figure>
     )
 }
 
-export default function ProductItem(){
+export default function ProductItem({data}){
+    // console.log(data)
+
+
     return(
         <div id="byItem">
-          <ItemEtc/>
+          {data && data.map((item)=>(
+            <ItemEtc key={item.id}
+                     item={item}/>
+          ))}
         </div>
     )
 }

@@ -75,3 +75,6 @@
     font-size: 14px;
     line-height: 16px;
 }
+#box06>div>figure>figcaption>p:last-child>a{
+    border-bottom: 1px solid #1c1c1c;
+}

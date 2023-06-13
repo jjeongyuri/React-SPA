@@ -24,6 +24,9 @@
     line-height: 1.6;
     font-family: "Noto Sans KR",PingFang,Helvetica,Arial,sans-serif;
 }
+.title a{
+    border-bottom: 1px solid #1c1c1c;
+}
 
 .detailImg{}
 .detailImg>figure{}

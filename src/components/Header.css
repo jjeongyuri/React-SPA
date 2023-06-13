@@ -16,6 +16,7 @@ header>div{
 }
 header>div>nav{
     position: relative;
+    /* background-color: pink; */
 }
 header>div>nav>ul{
     display: flex;
@@ -29,14 +30,14 @@ header>div>nav>ul>li>a{
 }
 header>div>nav>ul>li:first-child>ul{
     position: absolute;
-    left: 0; top: 51px;
+    left: -10px; top: 51px;
     background-color: #fcf9ee;
     width: 150px;
     /* display: none; */
 }
 header>div>nav>ul>li:first-child>ul>li{
-    padding: 5px;
-    text-align: center;
+    padding: 10px;
+    text-align: justify;
 }
 header>div>nav>ul>li:first-child>ul>li>a{
     font-size: 12px;
