@@ -5,6 +5,8 @@ import { getData } from "../Api/Api";
 import { Link, useSearchParams } from "react-router-dom";
 import { useState } from "react";
 
+
+
 export default function ProductList(){
     const [searchParams,setSearchParams] = useSearchParams();
     const initKeyword = searchParams.get('keyword');
@@ -14,7 +16,7 @@ export default function ProductList(){
     const handleKeywordChange = (e) => setKeyword(e.target.value);
     const handleSubmit = (e)=>{
         e.preventDefault();
-        setSearchParams(keyword? keyword : {})
+        setSearchParams(keyword? {keyword} : {})
     }
 
     return(

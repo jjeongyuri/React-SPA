@@ -73,39 +73,3 @@
 #box08{
     margin: 66px 0 112px;
 }
-#box08>div{
-    width: 1400px;
-    margin: 0 auto;
-}
-#box08>div>dl{
-    border-top: 1px solid #e2e1d7;
-}
-#box08>div>dl>dt{
-    font-size: 24px;
-    line-height: 90px;
-}
-#box08>div>dl>dd{
-    font-size: 12px;
-    color: #1c1c1c;
-    font-weight: 400;
-    line-height: 1.8;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #e2e1d7;
-    font-family: "Noto Sans KR",PingFang,Helvetica,Arial,sans-serif;
-}
-#box08>div>dl>dd>span{
-    font-weight: 700;
-}
-.detail{
-    padding: 42px 0;
-}
-.detail>figure{}
-.detail>figure>p{
-    font-size: 24px;
-    margin-bottom: 44px;
-}
-.detail>figure>img{}
-.detail>figure>figcaption{}
-.detail>figure>figcaption>dl{}
-.detail>figure>figcaption>dl>dt{}
-.detail>figure>figcaption>dl>dd{}

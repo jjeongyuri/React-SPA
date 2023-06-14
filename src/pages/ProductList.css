@@ -40,7 +40,7 @@
     margin-bottom: 50px;
 }
 #box05>div>form>input{
-    width: 60%;
+    width: 65%;
     line-height: 30px;
     padding: 2px;
     margin-right: 10px;
@@ -55,6 +55,7 @@
 #box06>div{
     width: 1400px;
     margin: 0 auto;
+    border: 1px solid #cccccc;
 }
 #box06>div>figure{
     display: flex;

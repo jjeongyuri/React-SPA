@@ -6,10 +6,12 @@ import Product from "./pages/Product";
 import About from "./pages/About";
 import Story from "./pages/Story";
 import WishList from "./pages/WishList";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function Main(){
     return(
         <BrowserRouter>
+        <ScrollToTop/>
           <App>
             <Routes>
                 <Route path="/" element={<Home/>}/>
