@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './ProductItem.css';
 
 export function ItemEtc({item}){
@@ -16,7 +17,9 @@ export function ItemEtc({item}){
                     </dd>
                 </dl>
                 <p>
+                    <Link to={`/list/${item.slug}`}>
                     <button>제품보기</button>
+                    </Link>
                 </p>
             </figcaption>
         </figure>

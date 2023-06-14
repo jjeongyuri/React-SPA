@@ -31,10 +31,11 @@
     margin-left: 8px;
 }
 #byItem>figure>figcaption>p{}
-#byItem>figure>figcaption>p>button{
+#byItem>figure>figcaption>p>a>button{
     width: 128px;
     height: 40px;
     border: 1px solid #e2e1d7;
     font-size: 15px;
     background-color: #fcf9ee;
+    cursor: pointer;
 }

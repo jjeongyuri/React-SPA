@@ -2,10 +2,20 @@ import ProductItem from "../components/ProductItem";
 import './ProductList.css';
 import {BiSearchAlt} from 'react-icons/bi';
 import { getData } from "../Api/Api";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
+import { useState } from "react";
 
 export default function ProductList(){
-    const data = getData();
+    const [searchParams,setSearchParams] = useSearchParams();
+    const initKeyword = searchParams.get('keyword');
+    const [keyword,setKeyword] = useState(initKeyword || '');
+    const data = getData(initKeyword);
+
+    const handleKeywordChange = (e) => setKeyword(e.target.value);
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        setSearchParams(keyword? keyword : {})
+    }
 
     return(
         <>
@@ -20,8 +30,9 @@ export default function ProductList(){
                 <p>장엄한 광야. 안개가 자욱한 들판과 헤더 꽃으로 뒤덮인 언덕. 자연이 다시 차지한 고대 성곽.<br/>
                 스코틀랜드 하일랜드의 길들여지지 않은 아름다움에서 영감을 받은 리미티드 컬렉션입니다.
                 </p>
-                <form>
-                    <input type="text"/>
+                <form onSubmit={handleSubmit}>
+                    <input type="text"
+                           onChange={handleKeywordChange}/>
                     <BiSearchAlt style={{width:"30px",height:
                 " 30px"}}/>
                 </form>

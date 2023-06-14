@@ -11,7 +11,9 @@ function ProductName({items,toggle}){
        }
     return (
         <li>
-          <a href="#">{items.titleKorea}</a>
+          <Link to={`./list/${items.slug}`}>
+            {items.titleKorea}
+          </Link>
         </li>
     )
 }

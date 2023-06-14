@@ -1,29 +1,42 @@
 import ProductItem from "../components/ProductItem";
 import './Product.css';
+import { getCoursesBySlug } from "../Api/Api";
+import { useParams } from "react-router-dom";
 
-export default function Product(){
-   
+
+function ProductName({item}){
 
     return(
-        <>
-        <div id="box07">
-            <div>
+        <div>
                 <div className="pic">
-                    <img src={"../img/box_pic01.avif"} alt=""/>
+                    <img src={item.photoUrl} alt={item.titleEnglish}/>
                 </div>
                 <div className="info">
                     <dl>
                         <dt>신제품</dt>
-                        <dd>영어이름</dd>
-                        <dd>한글이름</dd>
-                        <dd>가격</dd>
-                        <dd>내용</dd>
+                        <dd>{item.titleEnglish}</dd>
+                        <dd>{item.titleKorea}</dd>
+                        <dd>{item.price}</dd>
+                        <dd><span>{item.title}</span>
+                            {item.summary}
+                        </dd>
                     </dl>
                     <p>
                         <button>장바구니 담기</button>
                     </p>
                 </div>
             </div>
+    )
+}
+
+export default function Product(){
+    const {parmsSlug} = useParams();
+    const item = getCoursesBySlug(parmsSlug);
+
+    return(
+        <>
+        <div id="box07">
+            <ProductName item={item}/>
         </div>
         <div id="box08">
            <div>
@@ -50,7 +63,7 @@ export default function Product(){
         </div>
         <div id="box03">
             <h2>당신을 위한 추천 상품</h2>
-                <ProductItem/>
+                {/* <ProductItem/> */}
         </div>
         </>
     )

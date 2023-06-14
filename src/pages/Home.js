@@ -63,14 +63,14 @@ export default function Home(){
                     <figcaption>
                         <p>와일드 아킬리아 코롱</p>
                         <p>
-                            <a href="#">더 알아보기</a>
+                            <a>더 알아보기</a>
                         </p>
                     </figcaption>
                 </figure>
                 <figure>
                     <img src={'./img/box02_pic02.avif'} alt="향수2"/>
                     <figcaption>
-                        <p>와일드 아킬리아 코롱</p>
+                        <p>말로우 온 더 무어 코롱</p>
                         <p>
                             <a href="#">더 알아보기</a>
                         </p>
