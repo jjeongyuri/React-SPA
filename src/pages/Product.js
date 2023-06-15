@@ -1,13 +1,21 @@
 import ProductItem from "../components/ProductItem";
 import './Product.css';
 import { getCoursesBySlug } from "../Api/Api";
-import { useParams } from "react-router-dom";
+import {  useNavigate, useParams } from "react-router-dom";
 import { getData } from "../Api/Api";
 import ProductDetail from "../components/ProductDetail";
+import { addWishList } from "../Api/Api";
 
 
 function ProductName({item}){
+    const navigate = useNavigate();
 
+    const handleWishList = ()=> {
+        addWishList(item?.slug);
+        navigate('/wishlist')
+    }
+
+    
     return(
         <div>
                 <div className="pic">
@@ -24,7 +32,7 @@ function ProductName({item}){
                         </dd>
                     </dl>
                     <p>
-                        <button>장바구니 담기</button>
+                        <button onClick={handleWishList}>장바구니 담기</button>
                     </p>
                 </div>
             </div>

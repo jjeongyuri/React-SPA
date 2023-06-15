@@ -1,23 +1,24 @@
-import { getData } from "../Api/Api";
 import './ProductDetail.css';
 
 
-function ProductDetailEtc({data}){
-    // console.log(data)
+function ProductDetailEtc({item}){
+    // console.log(item)
 
 
     return (
         <div className="detailetc">
-            <figure>
-            <img src="" alt=""/>
-            <figcaption>
-                <dl>
-                    <dt></dt>
-                    <dd></dd>
-                    <dd></dd>
-                </dl>
-            </figcaption>
-            </figure>
+                {item.topics.map(({topic})=>{
+                    return <figure key={topic.id}>
+                           <img src={topic.pic} alt={topic.toname}/>
+                           <figcaption>
+                               <dl>
+                                   <dt>{topic.totitle}</dt>
+                                   <dd>{topic.toname}</dd>
+                                   <dd>{topic.something}</dd>
+                               </dl>
+                           </figcaption>
+                           </figure>
+                })}
     </div>
     )
 }
@@ -25,7 +26,6 @@ function ProductDetailEtc({data}){
 
 export default function ProductDetail({item}){
     // console.log(item)
-    const data = getData();
 
 
     return(
@@ -41,7 +41,7 @@ export default function ProductDetail({item}){
         </dl>
         <div className="detail">
            <p>테이스팅 노트</p>
-           <ProductDetailEtc data={data}/>
+           <ProductDetailEtc item={item}/>
         </div>
       </div>
     )

@@ -28,12 +28,35 @@
     font-size: 24px;
     margin-bottom: 44px;
 }
-.detail>figure{}
-.detail>figure>p{
-    
+.detailetc{
+    display: flex;
+    padding: 40px 0 0;
 }
-.detail>figure>img{}
-.detail>figure>figcaption{}
-.detail>figure>figcaption>dl{}
-.detail>figure>figcaption>dl>dt{}
-.detail>figure>figcaption>dl>dd{}
+.detailetc>figure{
+    width: 33.3333%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e2e1d7;
+}
+.detailetc>figure>img{
+    max-width: 100%;
+    width: 139px;
+    height: 184px;
+}
+.detailetc>figure>figcaption{
+    width: 60%;
+    margin-left: 24px;
+}
+.detailetc>figure>figcaption>dl{
+    width: 90%;
+    font-family: "Noto Sans KR",PingFang,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #1c1c1c;
+    line-height: 1.6;
+}
+.detailetc>figure>figcaption>dl>dt{
+    margin-bottom: 32px;
+}
+.detailetc>figure>figcaption>dl>dd{
+    margin-bottom: 32px;
+}
