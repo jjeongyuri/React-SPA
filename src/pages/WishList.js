@@ -4,13 +4,7 @@ import { getWishList,deleteWishList } from "../Api/Api";
 import { useEffect, useState } from "react";
 
 
-function WishListItem({item,setDataFromBy}){
-    const num = [0,1,2,3,4];
-
-    const [count,setCount] = useState(116000);
-    
-    // const countChange = (a)=>setCount(count * a)
-    // console.log(countChange)
+function WishListItem({item,setDataFromBy,count,number,changeNum,arr,changeBy}){
 
     const handleDelete = (dataSlug)=>{
         deleteWishList(dataSlug);
@@ -18,6 +12,10 @@ function WishListItem({item,setDataFromBy}){
         setDataFromBy(NestData);
     }
     
+    function NumChangeBy(e){
+        changeNum(e.target.value)
+    }
+
     return (
 
           <figure>
@@ -31,14 +29,17 @@ function WishListItem({item,setDataFromBy}){
                     <dd>{item.ml}</dd>
                 </dl>
                 <dl className="rightdl">
-                    <dt>{count}</dt>
+                    <dt>₩{item.price}</dt>
                     <dd>
-                        <select>
-                           {num.map((numId)=><option key={numId}
-                                                     onClick={(aa)=>setCount(count *aa)}>{numId}</option>)}
+                        <select defaultValue={number}
+                                onChange={NumChangeBy}>
+                           {arr.map((items,index)=>(
+                            <option value={items}
+                                    key={index}> {items} </option>
+                           ))}
                         </select>
                     </dd>
-                    <dd>{count}</dd>
+                    <dd>₩{count}</dd>
                     <dd>
                         <button onClick={()=>handleDelete(item.slug)}>삭제</button>
                     </dd>
@@ -58,6 +59,21 @@ export default function WishList(){
     },[])
 
 
+    const numArr = [1,2,3,4];
+
+    const [count,setCount] = useState(116000);
+    const [number,setNumber] = useState(1);
+    const [arr,setArr] = useState(numArr);
+
+    function changeNum(num){
+        setNumber(num)
+    }
+
+    function changeBy(){
+        return setCount(count * changeNum)
+    }
+
+
     return(
         <div id="box15">
             <div>
@@ -73,7 +89,13 @@ export default function WishList(){
                         {dataFromBy.map((item)=>(
                             <li key={item.slug}>
                                 <WishListItem item={item}
-                                              setDataFromBy={setDataFromBy}/>
+                                              setDataFromBy={setDataFromBy}
+                                              count={count}
+                                              number={number}
+                                              changeNum={changeNum}
+                                              arr={arr}
+                                              changeBy={changeBy}
+                                              />
                             </li>
                         ))}
                     </ul>

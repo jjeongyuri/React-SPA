@@ -63,7 +63,7 @@ export default function Home(){
                     <figcaption>
                         <p>와일드 아킬리아 코롱</p>
                         <p>
-                            <a>더 알아보기</a>
+                            <Link to={'/list/no01'}>더 알아보기</Link>
                         </p>
                     </figcaption>
                 </figure>
@@ -72,7 +72,7 @@ export default function Home(){
                     <figcaption>
                         <p>말로우 온 더 무어 코롱</p>
                         <p>
-                            <a href="#">더 알아보기</a>
+                            <Link to={'/list/no03'}>더 알아보기</Link>
                         </p>
                     </figcaption>
                 </figure>

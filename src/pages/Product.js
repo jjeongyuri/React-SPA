@@ -26,7 +26,7 @@ function ProductName({item}){
                         <dt>신제품</dt>
                         <dd>{item.titleEnglish}</dd>
                         <dd>{item.titleKorea}</dd>
-                        <dd>{item.price}</dd>
+                        <dd>₩{item.price}</dd>
                         <dd><span>{item.title}</span>
                             {item.summary}
                         </dd>

@@ -12,7 +12,7 @@ export function ItemEtc({item}){
                     <dt>신제품</dt>
                     <dd>{item.titleEnglish}</dd>
                     <dd>{item.titleKorea}</dd>
-                    <dd>{item.price}
+                    <dd>₩{item.price}
                         <span>{item.ml}</span>
                     </dd>
                 </dl>
