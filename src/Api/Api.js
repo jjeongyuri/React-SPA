@@ -17,7 +17,7 @@ export function getCoursesBySlug(dataSlug){
 
 // wishlist에 필요한것
 const WISHLIST_KEY = 'wishlist';
-const wishlist = JSON.parse(localStorage.getItem(WISHLIST_KEY));
+const wishlist = JSON.parse(localStorage.getItem(WISHLIST_KEY) || '{}');
 
 export function addWishList(dataSlug){
     wishlist[dataSlug] = true;

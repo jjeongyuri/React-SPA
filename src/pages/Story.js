@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
+import { getData } from "../Api/Api";
 import ProductItem from "../components/ProductItem";
 import './Story.css';
 
 export default function Story(){
+    const data = getData();
+    // console.log(data)
+
+
     return(
         <>
         <div id="box10">
@@ -39,7 +44,7 @@ export default function Story(){
         <div id="box03">
             <h2>이야기 속 제품 자세히 보기</h2>
             <div id="productItem">
-                <ProductItem/>
+                <ProductItem data={data}/>
             </div>
         </div>
         </>
