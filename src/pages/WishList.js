@@ -4,8 +4,7 @@ import { getWishList,deleteWishList } from "../Api/Api";
 import { useEffect, useState } from "react";
 
 
-function WishListItem({item,setDataFromBy,count,number,changeNum,arr,changeBy}){
-
+function WishListItem({item,setDataFromBy,count,number,changeNum,arr}){
     const handleDelete = (dataSlug)=>{
         deleteWishList(dataSlug);
         const NestData = getWishList();
@@ -62,15 +61,14 @@ export default function WishList(){
     const numArr = [1,2,3,4];
 
     const [count,setCount] = useState(116000);
+    const a = 116000;
     const [number,setNumber] = useState(1);
     const [arr,setArr] = useState(numArr);
 
     function changeNum(num){
         setNumber(num)
-    }
-
-    function changeBy(){
-        return setCount(count * changeNum)
+        setCount(a * num);
+        console.log(count);
     }
 
 
@@ -94,7 +92,6 @@ export default function WishList(){
                                               number={number}
                                               changeNum={changeNum}
                                               arr={arr}
-                                              changeBy={changeBy}
                                               />
                             </li>
                         ))}
