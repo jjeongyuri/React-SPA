@@ -59,16 +59,16 @@ export default function WishList(){
 
 
     const numArr = [1,2,3,4];
-
-    const [count,setCount] = useState(116000);
+    
     const a = 116000;
+    const [count,setCount] = useState(116000);
     const [number,setNumber] = useState(1);
     const [arr,setArr] = useState(numArr);
 
     function changeNum(num){
-        setNumber(num)
-        setCount(a * num);
-        console.log(count);
+        setNumber(num);
+        setCount(num * a);
+        // console.log(count);
     }
 
 

@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# 제목
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React routing과 Local Storage를 활용하여 만든 Jo Malone SPA 사이트제작
 
-## Available Scripts
+### 소개
 
-In the project directory, you can run:
+가상 클라이언트 A씨를 가정하여 만든 개인 포트폴리오 사이트입니다.
 
-### `npm start`
+### 배포링크
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+배포방식은 AWS:S3의 간이 배포를 이용하였습니다.</br>
+<a href=>링크 이동하기</a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 개발 도구 및 환경
 
-### `npm test`
+##### 개발환경: VScode
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### 개발도구: HTML, CSS, Javascript, React
 
-### `npm run build`
+### 프로젝트 설명
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 프로젝트 계획서
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+###### <a href="">계획서기열람하기</a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 헤더(Header) & 푸터(Footer)
 
-### `npm run eject`
+- 헤더와 푸터는 각페이지의 Html에 삽입하고 js와 css를 공유하여 import하는 방식을 이용했습니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### 메인페이지(home.js)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Swiper를 사용하여 광고 배너가 보이도록 만들었습니다.
+2. Swiper안의 컬렉션 보기 선택시 ProductList페이지로 이동하게 만들었습니다.
+3. 데이터는 Json으로 작성하여 불러오는 방식을 이용했습니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### 상품리스트 페이지(ProductList.js)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. 상품검색 기능을 구현하였습니다.
+2. 제품보기 클릭시 상세페이지(Product.js)로 이동하게 만들었습니다.
+3. 스토리보기 클릭시 Story페이지로 이동하게 만들었습니다.
 
-## Learn More
+#### 상품상세 페이지(Product.js)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. 상품에 대한 상세정보를 나타나게 하고 장바구니에 넣는 기능을 구현하였습니다.
+2. 카테고리에 속한 상품의 연관상품을 보여주도록 만들었습니다.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### 장바구니 페이지(WishList.js)
 
-### Code Splitting
+1. 상세페이지에서 장바구니 클릭시 장바구니 페이지로 이동되고 상품이 추가됩니다.
+2. 장바구니 페이지에서는 상품을 등록 및 삭제 기능을 구현하였습니다.
+3. 장바구니 수량 선택시 금액이 자동 계산되도록 구현하였습니다. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 자기평가
 
-### Analyzing the Bundle Size
+#### 부족한점
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. 컴포넌트를 나누고 상세페이지를 나누는 과정에서, 그에 맞는 props, state를 생성하면서 코드의 양이 늘어난 것 같습니다. 이후에는 코드를 좀 더 깔끔하고 보기 좋게 하기 위해 노력을 해야 할 것 같습니다.
+2. SPA 사이트 제작과정에서, 부족한 부분이 있었으나 완성된 사이트에 함수들이 잘 적용된 것을 보니 자신감도 생기고 만족감을 느꼈습니다.
